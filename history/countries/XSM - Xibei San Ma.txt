@@ -1,0 +1,1 @@
+﻿capital = 754 #Was 604, but should be Xining

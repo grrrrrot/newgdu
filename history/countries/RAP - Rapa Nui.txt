@@ -1,0 +1,1 @@
+﻿capital = 948 # Easter Island

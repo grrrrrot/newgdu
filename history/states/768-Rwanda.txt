@@ -13,15 +13,7 @@ state = {
 
 		owner = BEL
 
-		IF = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
-			
-			add_dynamic_modifier = {
-				modifier = COG_rwandan_separatism_modifier
-			}	
-		}
+		
 
 		
 
