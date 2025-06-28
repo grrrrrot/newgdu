@@ -1,1 +1,1 @@
-﻿capital = 826
+﻿capital = 827
