@@ -6,25 +6,7 @@ state={
 	
 	state_category = large_town
 
-	resources = {
-		chromium = 3
-	}
-
 	history={
-		
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-			air_base = 1
-			10946 = {
-				naval_base = 1
-			}
-		}
-		
-		victory_points = {
-			10946 1 
-		}
-
 	}
 
 	provinces={

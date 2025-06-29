@@ -4,29 +4,9 @@ state = {
 	manpower = 80765
 	
 	state_category = pastoral
-	
-	resources = {
-		oil = 1
-	}
+
 
 	history = {
-
-		
-		
-		
-		
-
-		buildings = {
-			infrastructure = 0
-			13300 = {
-				naval_base = 1
-			}
-		}
-
-		victory_points = {
-			13300 1 
-		}
-		
 	}
 
 	provinces = {

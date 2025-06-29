@@ -6,8 +6,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8857;2284;sea;7617;1560;1009;1556;1016;PANAMA_CANAL;Panama
 2729;2408;sea;6257;2949;1598;2962;1612;KIEL_CANAL;Kiel
 5388;803;sea;1155;-1;-1;-1;-1;SUEZ_CANAL;Suez
-299;211;sea;2282;-1;-1;-1;-1;;Småland-Öland
-6345;6287;sea;2382;-1;-1;-1;-1;;Skåne-Sjaelland
 3260;3325;sea;2408;-1;-1;-1;-1;;Sjaelland-Fyn
 3374;13260;sea;2408;2971;1622;2973;1620;;SdFyn-Langeland
 13260;13261;sea;2408;2975;1619;2977;1618;;Langeland-Lolland
@@ -111,11 +109,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10203;9805;sea;5864;-1;-1;-1;-1;;Corfu-Epirus
 1106;12001;sea;5913;-1;-1;-1;-1;;Lefkada-Epirus
 3401;7127;sea;6801;-1;-1;-1;-1;;Cyclades-Greece
-8435;6864;sea;7452;-1;-1;-1;-1;;Lesbos-Turkey
-6550;4112;sea;7226;-1;-1;-1;-1;;Chios-Turkey
-7003;9941;sea;7226;-1;-1;-1;-1;;Kos-Bodrum
-10007;10122;sea;7226;-1;-1;-1;-1;;Rhodes-Turkey
-9833;11829;sea;5412;-1;-1;-1;-1;;Bosphorus
 9680;6741;sea;8282;-1;-1;-1;-1;;Kerch Strait
 9859;3962;sea;5946;-1;-1;-1;-1;;Tsugaru Strait
 10011;7110;sea;2708;4825;1219;-1;-1;;Tushima-Kyushu
@@ -139,16 +132,13 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
-13058;10245;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
-13058;12512;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
-13058;10636;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
-13058;13066;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
 12960;13292;sea;2580;-1;-1;-1;-1;;Falklands
 7683;13293;sea;8642;-1;-1;-1;-1;;Cote Nord
 8198;13295;sea;5473;-1;-1;-1;-1;;Aysen
 13307;13296;sea;9009;-1;-1;-1;-1;;Chubut
 12954;13297;sea;5424;-1;-1;-1;-1;;Araucania
 13312;7982;sea;2919;-1;-1;-1;-1;;South Iran
+8051;13313;sea;2691;-1;-1;-1;-1;;Kuwait-Bahrein
 761;13315;sea;9092;-1;-1;-1;-1;;Ontario
 13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
 1421;10184;sea;2899;-1;-1;-1;-1;;Sulu-Mindanao
