@@ -7,19 +7,6 @@ state = {
 	state_category = pastoral
 
 	history = {
-		 #Used to be PRU but should become theirs through the Peruvian-Ecuadorian War
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 1
-		}
-
-		victory_points = {
-			13289 2
-		}
-
-		
-		
 	}
 
 	provinces = {

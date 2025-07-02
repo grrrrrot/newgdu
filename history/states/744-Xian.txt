@@ -6,16 +6,6 @@ state={
 	}
 
 	history={
-		
-		
-		
-		victory_points = {
-			7418 1 
-		}
-		buildings = {
-			infrastructure = 2
-		}
-
 	}
 	manpower=9000000
 	buildings_max_level_factor=1.000

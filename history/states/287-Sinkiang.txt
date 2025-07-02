@@ -3,17 +3,6 @@ state={
 	name="STATE_287"
 
 	history={
-		
-		
-		
-		
-		buildings = {
-			infrastructure = 1
-
-		}
-		victory_points = {
-			4973 1
-		}
 	}
 
 

@@ -8,14 +8,11 @@ state={
 	
 
 	history={
-		buildings = {
-			infrastructure = 0
-		}
 
 	}
 
 	provinces={
-		1115 2068 10725 10868
+		2068
 	}
 
 	local_supplies=0.0 

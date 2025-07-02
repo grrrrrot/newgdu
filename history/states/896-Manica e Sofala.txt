@@ -4,17 +4,11 @@ state={
 	manpower = 188600
 	state_category = pastoral
 	history={
-		
-		buildings = {
-			infrastructure = 2
-
-		}
-		
 	}
 
 
 	provinces={
-		2120 5155 12935 12950 
+		12935
 	}
 
 	buildings_max_level_factor=1.000
