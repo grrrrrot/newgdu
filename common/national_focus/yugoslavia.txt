@@ -3,12 +3,6 @@ focus_tree = {
 	
 	country = {
 		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = YUG
-			has_dlc = "Death or Dishonor"
-		}
 	}
 	
 	default = no
