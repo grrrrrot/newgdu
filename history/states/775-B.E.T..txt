@@ -6,10 +6,13 @@ state={
 	
 
 	history={
+		buildings = {
+			infrastructure = 0
+		}
 	}
 
 	provinces={
-		4902
+		4902 5136 10893
 	}
 	manpower=18744
 	buildings_max_level_factor=1.000

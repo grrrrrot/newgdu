@@ -5,11 +5,19 @@ state={
 	state_category = pastoral
 
 	history={
+		
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10966 1 
+		}
+		
 
 	}
 
 	provinces={
-		12391
+		8138 8202 10966 12391 12958 12985 
 	}
 
 	buildings_max_level_factor=1.000

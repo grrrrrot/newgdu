@@ -6,10 +6,24 @@ state = {
 
 	history = {
 
+		
+		
+
+		buildings = {
+			infrastructure = 1
+			8248 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			8248 1 # Luanda
+		}
+
 	}
 
 	provinces = {
-		13371
+		5158 7548 8219 8248 12981 13371 13373
 	}
 
 	buildings_max_level_factor = 1.000

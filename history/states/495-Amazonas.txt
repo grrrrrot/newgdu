@@ -5,6 +5,15 @@ state={
 
 	history={
 		
+		
+		buildings = {
+			infrastructure = 0
+
+		}
+		victory_points = {
+			10934 1 
+		}
+
 	}
 
 	provinces={
