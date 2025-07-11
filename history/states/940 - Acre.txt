@@ -5,24 +5,7 @@ state = {
 	manpower = 463559
 	
 	state_category = pastoral
-	
-	resources = {
-		aluminium = 6 # was: 4
-	}
-
 	history = {
-
-		
-		
-
-		buildings = {
-			infrastructure = 1
-		}
-
-		victory_points = {
-			13278 2 
-		}
-		
 	}
 
 	provinces = {

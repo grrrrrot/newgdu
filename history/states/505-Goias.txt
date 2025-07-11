@@ -6,23 +6,7 @@ state = {
 	
 	state_category = rural
 
-	resources = {
-		aluminium = 3
-		chromium = 3
-	}
-
 	history = {
-
-		
-		
-
-		buildings = {
-			infrastructure = 1
-		}
-
-		victory_points = {
-			12987 3 
-		}
 
 	}
 

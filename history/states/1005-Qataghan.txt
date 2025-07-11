@@ -4,20 +4,10 @@ state={
 	manpower = 925226
 	state_category = rural
 
-	resources = {
-		chromium = 3
-	}
-
 	provinces={
-		7519 10781 10826 12314 12653 
+		7519
 	}
 	history={
-		
-		
-		
-		victory_points = {
-			10781 1
-		}
 	}
 	
 	buildings_max_level_factor=1.000

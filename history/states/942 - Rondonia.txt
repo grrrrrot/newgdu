@@ -7,18 +7,6 @@ state = {
 	state_category = pastoral
 
 	history = {
-
-		
-		
-
-		buildings = {
-			infrastructure = 1
-		}
-
-		victory_points = {
-			12939 2 
-		}
-
 	}
 
 	provinces = {

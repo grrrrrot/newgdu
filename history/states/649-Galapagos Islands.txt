@@ -5,21 +5,13 @@ state = {
 	manpower = 11532
 
 	history = {
-
-		
-		
-
+		owner = ENG
 		buildings = {
 			infrastructure = 1
 			5023 = {
 				naval_base = 1
 			}
-		}
-
-		victory_points = {
-			5023 1
-		}
-		
+		}	
 	}
 
 	provinces = { 5023 }

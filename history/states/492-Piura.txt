@@ -10,31 +10,6 @@ state = {
 	state_category = rural
 
 	history = {
-
-		
-		
-
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 1
-			13288 = {
-				naval_base = 1
-			}
-		}
-		
-		victory_points = {
-			2210 5 
-		}
-
-		victory_points = {
-			13288 1
-		}
-
-		victory_points = {
-			13286 1
-		}
-
 	}
 
 	provinces = {

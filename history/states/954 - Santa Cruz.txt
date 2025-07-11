@@ -4,25 +4,8 @@ state = {
 	manpower = 132000
 	
 	state_category = rural
-	
-	resources = {
-		oil = 3
-	}
 
 	history = {
-
-		
-		
-		
-
-		buildings = {
-			infrastructure = 1
-		}
-
-		victory_points = {
-			5173 1 
-		}
-		
 	}
 
 	provinces = {

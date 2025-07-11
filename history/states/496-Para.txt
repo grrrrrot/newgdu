@@ -5,26 +5,9 @@ state = {
 	manpower = 4603600
 	
 	state_category = rural # was town
-	
-	resources = {
-		steel = 3 # was: 4
-		
-	}
 
 	history = {
 
-		
-		
-
-		victory_points = {
-			7476 3
-		}
-
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-		}
-		
 	}
 
 	provinces = {

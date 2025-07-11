@@ -11,7 +11,7 @@ state={
 	history={
 	}
 	provinces={
-		1594 1635 4641
+		4641
 	}
 
 	local_supplies=0.0 
