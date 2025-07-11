@@ -13,12 +13,6 @@ focus_tree = {
 	
 	country = {
 		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = DEN
-			has_dlc = "Arms Against Tyranny"
-		}
 	}
 	
 	default = no

@@ -13,11 +13,6 @@ focus_tree = {
 	
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			tag = ARG
-			has_dlc = "Trial of Allegiance"
-		} 
 	}
 
 	default = no
