@@ -870,18 +870,6 @@ recruit_character = ITA_filippo_bonfiglietti
 recruit_character = ITA_curio_bernardis
 
 
-########################################
-##### MISSIOLINIS - TRIGGER EVENTS #####
-########################################
-
-### IF NOT BBA, trigger the first Missiolini from here
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	ITA_benito_mussolini = { unit_leader_event = { id = BBA_italo_ethiopian_war_events.01 days = 14 } }  # JAN 36 - Conquer Ethiopia  - APR/JUNE 36 - (120-170 days)
-}
-
 ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.11 days = 185 random_days = 5 } } # JUN 36 - Conquer Ethiopia  - DEC 36 - (170 days)
 #ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.21 days = 370 random_days = 5 } } # JAN 37 - Pacify Ethiopia - DEC 39 - (720 days) #MM: This is now triggered after war with MTTH
 ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.31 days = 370 random_days = 5 } } # JAN 37 - Industrialization - DEC 37 - (350 days)
@@ -929,120 +917,6 @@ if = {
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
 	amount = 150
-}
-add_equipment_to_stockpile = {
-	type = gw_armored_car_equipment
-	amount = 150
-}
-
-
-### VARIANTS ###
-# 1936 Start #
-#plane variants
-if = {
-	limit = { NOT = { has_dlc = "By Blood Alone" } }
-	create_equipment_variant = {
-		name = "CR.42"
-		type = fighter_equipment_0
-		upgrades = {
-			plane_gun_upgrade = 1
-			plane_range_upgrade = 0  
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 1
-		}
-	}
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	create_equipment_variant = {
-		name = "CR.32" #
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "Ca.111" #
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-		icon = "GFX_ITA_CAS1_medium"
-	}
-	create_equipment_variant = {
-		name = "Ca.101" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			engine_type_slot = engine_1_3x
-			special_type_slot_1 = lmg_defense_turret
-		}
-		obsolete = yes
-		icon = "GFX_ITA_early_bomber_old_medium"
-	}
-	create_equipment_variant = {
-		name = "Ca.133" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = bomb_locks
-			engine_type_slot = engine_1_3x
-			special_type_slot_1 = lmg_defense_turret_2x
-		}
-		obsolete = yes
-		icon = "GFX_ITA_early_bomber_old_medium"
-	}
-	create_equipment_variant = {
-		name = "S.72" # Savoia-Marchetti S.72, used by CHI
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-			engine_type_slot = engine_1_3x
-			special_type_slot_1 = lmg_defense_turret_2x
-		}
-		obsolete = yes
-		icon = "GFX_ITA_early_bomber_medium"
-	}
-	create_equipment_variant = {
-		name = "SM.81" #
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-			engine_type_slot = engine_1_3x
-			special_type_slot_1 = lmg_defense_turret_2x
-		}
-		icon = "GFX_ITA_early_bomber_medium"
-	}
-	create_equipment_variant = {
-		name = "SM.79" #
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-			engine_type_slot = engine_2_3x
-			special_type_slot_1 = lmg_defense_turret_2x
-		}
-		icon = "GFX_ITA_naval_bomber1_medium"
-	}
-	create_equipment_variant = {
-		name = "Ba.65" #
-		type = small_plane_cas_airframe_1
-		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_ITA_CAS1_medium"
-	}
-
 }
 
 #TANKS
@@ -1118,7 +992,6 @@ if = {
 		icon = "GFX_ITA_basic_light_tank_medium"
 	}
 }
-
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -1130,7 +1003,6 @@ if = {
 		variant_name = "Fiat 3000"
 	}
 }
-
 if = {
 	limit = {
 		NOT = { has_dlc = "Man the Guns" }
