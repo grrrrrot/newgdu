@@ -1,0 +1,9 @@
+﻿division_template = {
+	name = "Morit Diviziin"			# Cavalry Division
+
+	division_names_group = MON_CAV_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
