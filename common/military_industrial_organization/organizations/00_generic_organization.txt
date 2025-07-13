@@ -237,6 +237,39 @@ generic_mobile_tank_organization = {
 			defense = 0.05
 		}
 	}
+	trait = {
+		token = mio_streamline_optimization
+		name = streamline_optimization_mio
+		#icon = 
+		position = {x=8 y=0}
+		#relative_position_id
+		#any_parent = { mio_improve_main_guns mio_improve_machine_guns }
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+	trait = {
+		token = mio_line_eff_up
+		name = line_eff_up_mio
+		#icon = 
+		position = {x=0 y=1}
+		relative_position_id = mio_streamline_optimization
+		any_parent = { mio_streamline_optimization }
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+	trait = {
+		token = mio_mass_production
+		name = mass_production_mio
+		#icon = 
+		position = {x=0 y=1}
+		relative_position_id = mio_line_eff_up
+		any_parent = { mio_line_eff_up }
+		production_bonus = {
+			production_capacity_factor = 0.025
+		}
+	}
 }
 
 
