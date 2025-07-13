@@ -27,7 +27,7 @@ GER_porsche_organization = {
 }
 
 GER_henschel_organization = {
-	include = generic_infantry_tank_organization
+	include = generic_mobile_tank_organization
 	icon = GFX_idea_henschel
 	
 	allowed = {	

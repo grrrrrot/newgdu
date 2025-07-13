@@ -10,7 +10,7 @@
 
 
 
-# GENERIC TANK MANUFACTURER - Based on Daimler Benz
+# GENERIC TANK MANUFACTURER
 generic_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 
@@ -18,14 +18,126 @@ generic_tank_organization = {
 		always = no
 	}
 
-	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
-	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
+	equipment_type = { mio_cat_eq_all_medium_tank }
+	research_categories = { mio_cat_tech_medium_armor_and_modules }
+
+	trait = {
+		token = mio_frontal_armor
+		name = frontal_armor_mio
+		#icon = 
+		position = {x=2 y=0}
+
+		mutually_exclusive = { mio_side_armor }
+		equipment_bonus = {
+			armor_value = 0.05
+			breakthrough = 0.025
+		}
+	}
 	
-	
+	trait = {
+		token = mio_side_armor
+		name = side_armor_mio
+		#icon = 
+		position = {x=4 y=0}
+
+		mutually_exclusive = { mio_frontal_armor }
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+	}
+	trait = {
+		token = mio_improve_machine_guns
+		name = machine_guns_mio
+		#icon = 
+		position = {x=0 y=1}
+		relative_position_id = mio_frontal_armor
+		any_parent = { mio_side_armor mio_frontal_armor }
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+	}
+	trait = {
+		token = mio_more_expolosive_shels
+		name = expolosive_shels_mio
+		#icon = 
+		position = {x=0 y=1}
+		relative_position_id = mio_improve_machine_guns
+		any_parent = { mio_improve_machine_guns }
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+	}
+	trait = {
+		token = mio_improve_main_guns
+		name = main_guns_mio
+		#icon = 
+		position = {x=0 y=1}
+		relative_position_id = mio_side_armor
+		any_parent = { mio_side_armor mio_frontal_armor }
+		equipment_bonus = {
+			hard_attack = 0.05
+		}
+	}
+	trait = {
+		token = mio_tungsten_lugs
+		name = tungsten_lugs_mio
+		#icon = 
+		position = {x=0 y=1}
+		relative_position_id = mio_improve_main_guns
+		any_parent = { mio_improve_main_guns }
+		equipment_bonus = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+	}
+	trait = {
+		token = mio_improve_aa_guns
+		name = aa_guns_mio
+		#icon = 
+		position = {x=1 y=2}
+		relative_position_id = mio_frontal_armor
+		any_parent = { mio_improve_main_guns mio_improve_machine_guns }
+		equipment_bonus = {
+			air_attack = 0.05
+		}
+	}
+	trait = {
+		token = mio_streamline_optimization
+		name = streamline_optimization_mio
+		#icon = 
+		position = {x=6 y=0}
+		#relative_position_id
+		#any_parent = { mio_improve_main_guns mio_improve_machine_guns }
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+	trait = {
+		token = mio_line_eff_up
+		name = line_eff_up_mio
+		#icon = 
+		position = {x=0 y=1}
+		relative_position_id = mio_streamline_optimization
+		any_parent = { mio_streamline_optimization }
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+	trait = {
+		token = mio_mass_production
+		name = mass_production_mio
+		#icon = 
+		position = {x=0 y=1}
+		relative_position_id = mio_line_eff_up
+		any_parent = { mio_line_eff_up }
+		production_bonus = {
+			production_capacity_factor = 0.025
+		}
+	}
 }
 	
 
-# INFANTRY TANK DESIGNER  - Based on Renault (FRA)
+# INFANTRY TANK DESIGNER - only for fra/ita
 generic_infantry_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_3
 
@@ -33,12 +145,12 @@ generic_infantry_tank_organization = {
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
-	equipment_type = { armor }
-	research_categories = { mio_cat_tech_all_armor_and_modules }
+	equipment_type = { mio_cat_eq_all_medium_tank }
+	research_categories = { mio_cat_tech_medium_armor_and_modules }
 
 }
 
-# MOBILE TANK DESIGNER / FAST TANK DESIGNER - Based on Hotchkiss (FRA)
+# MOBILE TANK DESIGNER / FAST TANK DESIGNER
 generic_mobile_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_3
 
@@ -46,13 +158,89 @@ generic_mobile_tank_organization = {
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
-	equipment_type = { armor }
-	research_categories = { mio_cat_tech_all_armor_and_modules }
+	equipment_type = { mio_cat_eq_all_light_tank }
+	research_categories = { mio_cat_tech_light_armor_and_modules }
 
+	trait = {
+		token = mio_light_howizer_guns
+		name = l_howizer_guns_mio
+		#icon = 
+		position = {x=1 y=0}
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+	}
+	trait = {
+		token = mio_truck_width
+		name = truck_width_mio
+		#icon = 
+		position = {x=0 y=1}
+		relative_position_id = mio_light_howizer_guns 
+		any_parent = { mio_light_howizer_guns }
+		equipment_bonus = {
+			maximum_speed = 0.1
+		}
+	}
+	trait = {
+		token = mio_ap_shells
+		name = ap_shells_mio
+		#icon = 
+		position = {x=4 y=0}
+		relative_position_id = mio_light_howizer_guns 
+		#any_parent = { mio_light_howizer_guns }
+		equipment_bonus = {
+			hard_attack = 0.05
+		}
+	}
+	trait = {
+		token = mio_l_side_armor
+		name = l_side_armor_mio
+		#icon = 
+		position = {x=0 y=1}
+		relative_position_id = mio_ap_shells 
+		any_parent = { mio_ap_shells }
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+	}
+	trait = {
+		token = mio_light_front_armor
+		name = l_front_armor_mio
+		#icon = 
+		position = {x=1 y=1}
+		relative_position_id = mio_light_howizer_guns 
+		any_parent = { mio_light_howizer_guns }
+		equipment_bonus = {
+			armor_value = 0.1
+		}
+	}
+	trait = {
+		token = mio_improve_aa_l_guns
+		name = l_aa_guns_mio
+		#icon = 
+		position = {x=3 y=1}
+		relative_position_id = mio_light_howizer_guns 
+		any_parent = { mio_ap_shells }
+		equipment_bonus = {
+			air_attack = 0.1
+		}
+	}
+	trait = {
+		token = mio_improve_armor
+		name = l_armor_mio
+		#icon = 
+		position = {x=-1 y=1}
+		relative_position_id = mio_improve_aa_l_guns 
+		any_parent = { mio_improve_aa_l_guns mio_light_front_armor }
+		equipment_bonus = {
+			armor_value = 0.05
+			defense = 0.05
+		}
+	}
 }
 
 
-# MEDIUM TANK DESIGNER - Based on Army Ordnance Department (USA)
+# MEDIUM TANK DESIGNER
 generic_medium_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_2
 
@@ -66,7 +254,7 @@ generic_medium_tank_organization = {
 }
 
 
-# HEAVY TANK DESIGNER - Based on KV (SOV)
+# HEAVY TANK DESIGNER
 generic_heavy_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_3
 
