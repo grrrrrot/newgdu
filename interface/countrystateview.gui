@@ -81,9 +81,9 @@ guiTypes = {
 				position = { x = 150 y = 170 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
-				slotsize = { width = 61 height = 50 }
-				max_slots_horizontal = 5
-				max_slots_vertical = 5
+				slotsize = { width = 36 height = 42 }
+				max_slots_horizontal = 8
+				max_slots_vertical = 6
 			}
 
 			iconType ={
@@ -461,6 +461,12 @@ guiTypes = {
 			quadTextureSprite = "GFX_buildings_strip"
 		}
 		
+		buttonType = {
+			name = "remove"
+			position = { x = 20 y = 40 } 
+			spriteType = "GFX_cancel_conversion_button"
+		}
+
 		iconType = {
 			name = "building_status_overlay"
 			position = { x = 10 y = 0 }
