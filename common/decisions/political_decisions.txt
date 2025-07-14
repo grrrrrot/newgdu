@@ -2067,7 +2067,7 @@ political_actions = {
 			modifier = {
 				add = 40
 				original_tag = ITA
-				has_completed_focus = ITA_monarchia_d_italia
+				
 			}
 		}
     }
