@@ -1,4 +1,20 @@
-
+#	Example:
+#
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
 
 
 FIN_nokia_tires_after_tech_effect = {
@@ -311,6 +327,333 @@ FIN_pact_for_continuation_war_start = { #To be used on FIN's scope - Used immedi
    ##    ##     ## ##          ##        ##     ##    ##    ##     ##       ##    ##     ##    ##    ## ##     ## ##    ##  ##  ##     ## ##        ##  ##    ## ##     ## 
    ##    ##     ## ########    ##        ##     ##    ##    ##     ##       ##     #######      ######   #######   ######  #### ##     ## ######## ####  ######  ##     ## 
 
+
+FIN_purchase_soviet_equipment_for_cw = {
+	add_equipment_to_stockpile = { 
+		type = infantry_equipment_0
+		amount = 6000 
+		producer = SOV
+	}
+
+	add_equipment_to_stockpile = { 
+		type = support_equipment
+		amount = 600
+		producer = SOV
+	}
+
+	add_equipment_to_stockpile = { 
+		type = motorized_equipment_1
+		amount = 200
+		producer = SOV
+	}
+
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		create_equipment_variant = {
+			name = "BA-20"
+			type = gw_armored_car_equipment
+			allow_without_tech = yes
+			model = "SOV_armored_car_0_entity"
+			icon = "GFX_SOV_armored_car1_medium"
+		}
+		add_equipment_to_stockpile = { 
+			type = gw_armored_car_equipment
+			amount = 50
+			producer = SOV
+			variant_name = "BA-20"
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		if = {
+			limit = {
+				NOT = { has_tech = gwtank_chassis }
+			}
+			set_technology = {
+				gwtank_chassis = 1
+				popup = yes
+			}
+		}
+		create_equipment_variant = { #Copy of T-27 variant in Soviet history file
+			name = "T-27"
+			type = light_tank_chassis_0
+			allow_without_tech = yes # Tooltip purposes, tech will be granted anyways
+			modules = {
+				main_armament_slot = tank_heavy_machine_gun
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 1
+				tank_nsb_armor_upgrade = 1
+			}
+			obsolete = yes
+			icon = "GFX_generic_gw_light_tank_medium"
+		}
+		add_equipment_to_stockpile = { 
+			type = light_tank_chassis_0
+			amount = 50
+			producer = SOV
+			variant_name = "T-27"
+		}
+	}
+	else = {
+		create_equipment_variant = {
+			name = "T-18"
+			type = gw_tank_equipment
+			allow_without_tech = yes
+			obsolete = yes
+			icon = "GFX_gwtank_medium"
+		}
+		add_equipment_to_stockpile = { 
+			type = gw_tank_equipment
+			amount = 50
+			producer = SOV
+			variant_name = "T-18"
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		if = {
+			limit = {
+				NOT = { has_tech = iw_small_airframe }
+			}
+			set_technology = {
+				iw_small_airframe = 1
+				popup = yes
+			}
+		}
+		create_equipment_variant = { #Copy of I-15 variant in Soviet history file
+			name = "I-15"
+			type = small_plane_airframe_0
+			allow_without_tech = yes # Tooltip purposes, tech will be granted anyways
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+			icon = "GFX_SOV_early_fighter_medium"
+			model = "SOV_fighter_equipment_0_entity"
+		}
+		add_equipment_to_stockpile = { 
+			type = small_plane_airframe_0
+			amount = 30
+			producer = SOV
+			variant_name = "I-15"
+		}
+	}
+	else = {
+		create_equipment_variant = {
+			name = "I-15"
+			type = fighter_equipment_0
+			allow_without_tech = yes
+			obsolete = yes
+			icon = "GFX_SOV_early_fighter_medium"
+			model = "SOV_fighter_equipment_0_entity"
+		}
+		add_equipment_to_stockpile = { 
+			type = fighter_equipment_0
+			amount = 30
+			producer = SOV
+			variant_name = "I-15"
+		}
+	}
+}
+
+
+
+
+###################################
+### FINNISH DEMOCRATIC REPUBLIC ###
+###################################
+
+FIN_form_finnish_democratic_republic = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = FIN_finish_democratic_republic_formed_flag }
+		}
+		promote_character = FIN_otto_wille_kuusinen
+		set_cosmetic_tag = FIN_finnish_democratic_republic
+		random_other_country = {
+			limit = {
+				original_tag = SOV
+				has_country_leader = {
+					ruling_only = yes
+					character = SOV_iosif_stalin
+				}
+			}
+			add_timed_idea = {
+				idea = FIN_finnish_goods
+				days = 730
+			}
+		}
+		set_country_flag = FIN_finish_democratic_republic_formed_flag
+	}
+}
+
+
+########    ###     ######   ######  ####  ######  ########     ######   #######  ##     ## ########  
+##         ## ##   ##    ## ##    ##  ##  ##    ##    ##       ##    ## ##     ## ##     ## ##     ## 
+##        ##   ##  ##       ##        ##  ##          ##       ##       ##     ## ##     ## ##     ## 
+######   ##     ##  ######  ##        ##   ######     ##       ##       ##     ## ##     ## ########  
+##       #########       ## ##        ##        ##    ##       ##       ##     ## ##     ## ##        
+##       ##     ## ##    ## ##    ##  ##  ##    ##    ##       ##    ## ##     ## ##     ## ##        
+##       ##     ##  ######   ######  ####  ######     ##        ######   #######   #######  ##        
+
+
+FIN_purchase_german_equipment_for_cw = {
+	add_equipment_to_stockpile = { 
+		type = infantry_equipment_0
+		amount = 6000 
+		producer = GER
+	}
+
+	add_equipment_to_stockpile = { 
+		type = support_equipment
+		amount = 600
+		producer = GER
+	}
+
+	add_equipment_to_stockpile = { 
+		type = motorized_equipment_1
+		amount = 200
+		producer = GER
+	}
+
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		create_equipment_variant = {
+			name = "Sdkfz 222"
+			type = gw_armored_car_equipment
+			allow_without_tech = yes
+			model = "GER_armored_car_0_entity"
+			icon = "GFX_GER_armored_car1_medium"
+		}
+		add_equipment_to_stockpile = { 
+			type = gw_armored_car_equipment
+			amount = 50
+			producer = GER
+			variant_name = "Sdkfz 222"
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		if = {
+			limit = {
+				NOT = { has_tech = gwtank_chassis }
+			}
+			set_technology = {
+				gwtank_chassis = 1
+				popup = yes
+			}
+		}
+		create_equipment_variant = { #Copy of Leichttraktor variant in German history file
+			name = "Leichttraktor"
+			type = light_tank_chassis_0
+			allow_without_tech = yes # Tooltip purposes, tech will be granted anyways
+			modules = {
+				main_armament_slot = tank_small_cannon
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 2
+				tank_nsb_armor_upgrade = 2
+			}
+			obsolete = yes
+			icon = "GFX_GER_gwtank_medium"
+		}
+		add_equipment_to_stockpile = { 
+			type = light_tank_chassis_0
+			amount = 50
+			producer = GER
+			variant_name = "Leichttraktor"				
+		}
+	}
+	else = {
+		create_equipment_variant = {
+			name = "Leichttraktor"
+			type = gw_tank_equipment
+			allow_without_tech = yes
+			obsolete = yes
+			icon = "GFX_GER_gwtank_medium"
+		}
+		add_equipment_to_stockpile = { 
+			type = gw_tank_equipment
+			amount = 50
+			producer = GER
+			variant_name = "Leichttraktor"	
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		if = {
+			limit = {
+				NOT = { has_tech = iw_small_airframe }
+			}
+			set_technology = {
+				iw_small_airframe = 1
+				popup = yes
+			}
+		}
+		create_equipment_variant = { #Copy of I-15 variant in German history file
+			name = "He 51" #also covers Ar 68
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+			icon = "GFX_GER_early_fighter_medium"
+			model = "GER_fighter_equipment_0_entity"
+		}
+		add_equipment_to_stockpile = { 
+			type = small_plane_airframe_0
+			amount = 30
+			producer = GER
+			variant_name = "He 51"
+		}
+	}
+	else = {
+		create_equipment_variant = {
+			name = "He 51"
+			type = fighter_equipment_0
+			allow_without_tech = yes
+			obsolete = yes
+			icon = "GFX_GER_early_fighter_medium"
+			model = "GER_fighter_equipment_0_entity"
+		}
+		add_equipment_to_stockpile = { 
+			type = fighter_equipment_0
+			amount = 30
+			producer = GER
+			variant_name = "He 51"
+		}
+	}
+}
 
 
 
