@@ -1,0 +1,15 @@
+characters={
+	PHI_manuel_luis_quezón={
+		name="Manuel Luis Quezón"
+		portraits={
+			civilian={
+				large=GFX_portrait_Manuel_Luis_Quezon
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

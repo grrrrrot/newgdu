@@ -1,0 +1,24 @@
+characters = {
+
+	### The King of Bohemi
+
+	CZE_edvard_benesh={
+		name="Edvard Beneš"
+		portraits={
+			civilian={
+				large=GFX_portrait_Edvard_Benes
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				skillful_diplomat
+			}
+		}
+	}
+	
+
+	# Illusive Gentleman auto-generated
+}

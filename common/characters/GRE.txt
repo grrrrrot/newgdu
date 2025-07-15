@@ -1,0 +1,16 @@
+characters={
+	GRE_konstantinos_demertzis={
+		name=GRE_konstantinos_demertzis
+		portraits={
+			civilian={
+				large="GFX_portrait_gre_konstantinos_demertzis"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ monarchist_puppet }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

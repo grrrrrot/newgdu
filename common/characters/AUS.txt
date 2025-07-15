@@ -1,0 +1,30 @@
+characters = { 
+
+	#####################
+	###COUNTRY LEADERS###
+	#####################
+
+	#Nonaligned
+
+	AUS_kurt_schuschnigg = {
+		instance = {
+
+			name = AUS_kurt_schuschnigg
+			portraits = {
+				civilian = {
+					large = GFX_portrait_AUS_kurt_schuschnigg
+					small = GFX_portrait_AUS_kurt_schuschnigg_small
+				}
+			}
+			country_leader = {
+				ideology = despotism
+				expire = "1965.1.1.1"
+				id = -1
+				traits = { AUS_under_german_pressure }
+			}
+
+		}
+
+	}
+}
+
