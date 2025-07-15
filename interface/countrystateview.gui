@@ -81,9 +81,9 @@ guiTypes = {
 				position = { x = 150 y = 170 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
-				slotsize = { width = 36 height = 42 }
-				max_slots_horizontal = 8
-				max_slots_vertical = 6
+				slotsize = { width = 61 height = 50 }
+				max_slots_horizontal = 5
+				max_slots_vertical = 5
 			}
 
 			iconType ={
