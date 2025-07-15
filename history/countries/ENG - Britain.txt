@@ -89,6 +89,8 @@ add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	george_v
+	efi_start
+	airandnavy_idea
 }
 set_convoys = 1000
 

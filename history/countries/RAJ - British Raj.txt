@@ -200,6 +200,8 @@ if = {
 		RAJ_princely_states
 		RAJ_marginalized_muslim_community
 		RAJ_risk_of_famine
+		airandnavy_idea
+		efi_start
 	}
 
 	add_to_tech_sharing_group = commonwealth_research

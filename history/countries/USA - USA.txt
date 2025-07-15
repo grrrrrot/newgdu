@@ -182,6 +182,8 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
+	efi_start
+	airandnavy_idea
 }
 
 

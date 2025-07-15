@@ -1,19 +1,6 @@
 ﻿capital = 64 # Berlin/Brandeburg
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "GER_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "GER_1936_nsb"
-}
+set_oob = "GER_1936_nsb"
 
 add_breakthrough_progress = {
 	specialization = specialization_land
@@ -450,6 +437,8 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	efi_start
+	airandnavy_idea
 }
 
 # Activates the MEFO Bills Mission

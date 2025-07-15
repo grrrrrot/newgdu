@@ -156,6 +156,8 @@ if = {
 		#laws
 		low_economic_mobilisation
 		limited_conscription
+		airandnavy_idea
+		efi_start
 	}
 
 	

@@ -240,6 +240,8 @@ if = {
 	    FRA_matignon_agreements
 		#laws
 		partial_economic_mobilisation
+		efi_start
+		airandnavy_idea
 	}
 
 	complete_national_focus = FRA_begin_rearmament
