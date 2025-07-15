@@ -461,12 +461,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_buildings_strip"
 		}
 		
-		buttonType = {
-			name = "remove"
-			position = { x = 20 y = 40 } 
-			spriteType = "GFX_cancel_conversion_button"
-		}
-
 		iconType = {
 			name = "building_status_overlay"
 			position = { x = 10 y = 0 }
