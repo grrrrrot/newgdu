@@ -37,6 +37,8 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	efi_start
+	airandnavy_idea
 }
 
 # RESISTANCE / COMPLIANCE

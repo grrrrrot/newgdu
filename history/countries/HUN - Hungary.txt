@@ -628,6 +628,8 @@ add_breakthrough_progress = {
 		add_ideas = {
 			partial_economic_mobilisation
 			volunteer_only
+			efi_start
+			airandnavy_idea
 		}
 
 		add_ideas = HUN_secret_rearmament

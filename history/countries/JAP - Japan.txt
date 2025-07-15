@@ -20,6 +20,8 @@ add_ideas = {
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	JAP_militarism
+	efi_start
+	airandnavy_idea
 
 }
 
