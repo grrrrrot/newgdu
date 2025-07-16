@@ -1068,7 +1068,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -17 y = 7 }
+			position = { x = -17 y = 6 }
 		}
 		
 		categories = {
@@ -1080,6 +1080,11 @@ technologies = {
 			mio_cat_all_light_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
+
+		path = {
+			leads_to_tech = airplane_tank_buster_2
+			research_cost_coeff = 1
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -1093,6 +1098,30 @@ technologies = {
 			}
 		}
 	}
+	airplane_tank_buster_2 = {
+		enable_equipment_modules = {
+			tank_buster_2
+		}
+
+			
+		research_cost = 1
+		start_year = 1942
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -17 y = 8 }
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+	}
 
 
 	armor_piercing_bombs = {
@@ -1101,11 +1130,11 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1938
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -17 y = 5 }
+			position = { x = -17 y = 4 }
 		}
 		path = {
 			leads_to_tech = heavy_bombs
