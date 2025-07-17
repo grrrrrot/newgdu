@@ -369,7 +369,6 @@ generic_mobile_tank_organization = {
 		icon = GFX_generic_mio_trait_icon_maximum_speed
 
 		position = {x=1 y=0}
-		mutually_exclusive = {  }
 
 		equipment_bonus = {
 			maximum_speed = 0.1
@@ -377,22 +376,16 @@ generic_mobile_tank_organization = {
 	}
 
 	trait = {
+		token = mobile_tank_mio_armor
+		name = mobile_tank_mio_armor_name
+		icon = GFX_
 
+		position = {x=4 y=0}
+	
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
 	}
-}
-
-
-# MEDIUM TANK DESIGNER
-generic_medium_tank_organization = {
-	icon = GFX_idea_generic_tank_manufacturer_2
-
-	allowed = {
-		always = no # Archetype only - countries using it have their own verisons
-	}
-
-	equipment_type = { mio_cat_eq_all_medium_tank }
-	research_categories = { mio_cat_tech_medium_armor_and_modules }
-
 }
 
 
@@ -407,6 +400,49 @@ generic_heavy_tank_organization = {
 	equipment_type = { mio_cat_eq_all_heavy_tank }
 	research_categories = { mio_cat_tech_heavy_armor_and_modules }
 
+	trait = {
+		token = hev_tank_mio_truck_width
+		name = hev_tank_mio_truck_width_name
+		icon = GFX_generic_mio_department_icon_tank_general_quality
+
+		position = {x=3 y=0}
+
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+	}
+
+	trait = {
+		token = hev_tank_mio_sloped_armor
+		name = hev_tank_mio_sloped_armor
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_armor
+
+		position = {x=-1 y=1}
+		relative_position_id = hev_tank_mio_truck_width
+		all_parents = { hev_tank_mio_truck_width }
+		mutually_exclusive = { hev_tank_mio_angled_armor }
+
+		equipment_bonus = {
+			armor_value = 0.05
+			breakthrough = 0.025
+			build_cost_ic = 0.01
+		}
+	}
+
+	trait = {
+		token = hev_tank_mio_angled_armor
+		name = hev_tank_mio_angled_armor_name
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_engine
+
+		position = {x=1 y=1}
+		relative_position_id = hev_tank_mio_truck_width
+		all_parents = { hev_tank_mio_truck_width }
+		mutually_exclusive = { hev_tank_mio_sloped_armor }
+
+		equipment_bonus = {
+			build_cost_ic = -0.01
+		}
+	}
 }
 
 

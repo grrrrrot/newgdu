@@ -20,7 +20,7 @@ GER_porsche_organization = {
 	icon = GFX_idea_porsche
 	
 	allowed = {
-		tag = GER 
+		tag = GER
 	}
 
 	
@@ -31,29 +31,18 @@ GER_henschel_organization = {
 	icon = GFX_idea_henschel
 	
 	allowed = {	
-		tag = GER 
+		tag = GER
 	}
 	
 }
 
 GER_man_organization = {
-	include = generic_medium_tank_organization
+	include = generic_tank_organization
 	icon = GFX_idea_GER_MAN
 	
 	allowed = {	
-		tag = GER 
+		tag = GER
 	}
-}
-
-#Alkett
-GER_alkett_organization = {
-	include = generic_assault_guns_organization
-	icon = GFX_idea_GER_alkett
-	
-	allowed = {	
-		tag = GER 
-	}
-
 }
 
 #Benz 
@@ -62,7 +51,7 @@ GER_daimler_benz_organization = {
 	icon = GFX_idea_GER_daimler_benz
 	
 	allowed = {	
-		tag = GER 
+		tag = GER
 	}
 }
 
@@ -146,7 +135,7 @@ GER_messerschmitt_organization = {
 	icon = GFX_idea_messerschmitt
 	
 	allowed = {	
-		original_tag = GER
+		tag = GER
 	}
 }
 
