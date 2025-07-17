@@ -9,6 +9,7 @@ starting_train_buffer = 4
 
 set_technology = {
 	aa_lmg = 1
+	aa_hmg = 1
 	engines_1 = 1
 	engines_2 = 1
 	early_bombs = 1
@@ -29,6 +30,7 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	interwar_antitank = 1
 	basic_train = 1
 	trench_warfare = 1
 	fleet_in_being = 1
@@ -62,6 +64,7 @@ set_technology = {
 	mtg_transport = 1
 	basic_fire_control_system = 1
 	basic_dp_light_battery = 1
+	tech_mountaineers = 1
 }
 
 set_research_slots = 4
@@ -1021,3 +1024,182 @@ if = {
 			}
 		}
 	}
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "Hawker Fury"		#also covers Gloster Gauntlet, Hawker Demon
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_ENG_early_fighter_medium"
+		obsolete = yes
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		amount = 500
+		producer = ENG
+	
+	}
+	create_equipment_variant = {
+		name = "Hawker Nimrod"
+		type = cv_small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_ENG_fighter1_medium"
+		obsolete = yes
+	}
+	add_equipment_to_stockpile = {
+		type = cv_small_plane_airframe_0
+		amount = 75
+		producer = ENG
+
+	}
+	create_equipment_variant = {
+		name = "Gloster Gladiator"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = armor_plate_small
+			special_type_slot_2 = lmg_defense_turret
+		}
+		icon = "GFX_ENG_fighter1_medium"
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_1
+		amount = 500
+		producer = ENG
+	}
+	create_equipment_variant = {
+		name = "Fairey Gordon"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = armor_piercing_bomb_locks
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = dive_brakes_small
+			special_type_slot_2 = lmg_defense_turret
+		}
+		obsolete = yes
+		icon = "GFX_ENG_CAS_equipment_1_medium"
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_cas_airframe_1
+		amount = 300
+		producer = ENG
+	}
+	create_equipment_variant = {
+		name = "Vickers Vildebeest"
+		type = small_plane_naval_bomber_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = floats
+		}
+		icon = "GFX_ENG_naval_bomber1_medium"		#TODO GABRIEL: change if art in before release
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_naval_bomber_airframe_0
+		amount = 100
+		producer = ENG
+	}
+	create_equipment_variant = {
+		name = "Blackburn Shark"
+		type = cv_small_plane_naval_bomber_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+		}
+		icon = "GFX_ENG_naval_bomber1_medium"
+	}
+	add_equipment_to_stockpile = {
+		type = cv_small_plane_naval_bomber_airframe_0
+		amount = 175
+		producer = ENG
+	}
+	create_equipment_variant = {
+		name = "Handley Page Heyford"
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		amount = 200
+		producer = ENG
+	}
+	create_equipment_variant = {
+		name = "Bristol Blenheim"
+		type = medium_plane_airframe_1
+		modules = {
+		fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_ENG_tactical_bomber1_medium"
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_1
+		amount = 200
+		producer = ENG
+
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_0
+		amount = 100
+		producer = ENG
+	}
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 7000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 300
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 3500
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 5000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 50000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 2000
+	producer = ENG
+}
+
+
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 2500
+	producer = ENG
+}

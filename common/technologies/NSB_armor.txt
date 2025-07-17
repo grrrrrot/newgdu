@@ -674,6 +674,7 @@ technologies = {
 			tank_high_velocity_cannon_2
 			tank_radio_2
 			stabilizer
+			secondary_turret_small_cannon
 		}
 
 		path = {
@@ -831,6 +832,7 @@ technologies = {
 			tank_heavy_howitzer
 			tank_radio_2
 			stabilizer
+			secondary_turret_small_cannon
 		}
 
 		path = {

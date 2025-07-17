@@ -255,6 +255,9 @@ technologies = {
 		enable_equipment_modules = {
 			engine_3_1x
 		}
+		allow = { 
+			date > 1938.1.1
+		}
 	
 		path = {
 			leads_to_tech = advanced_small_airframe
@@ -339,7 +342,9 @@ technologies = {
 		enable_equipment_modules = {
 			engine_4_1x
 		}
-		
+		allow = { 
+			date > 1942.1.1
+		}
 		path = {
 			leads_to_tech = modern_small_airframe
 			research_cost_coeff = 1
@@ -611,7 +616,10 @@ technologies = {
 				localization_key = SP_UNLOCK_PROJECT
 				PROJECT = sp_air_jet_engine	
 			}
-		}		
+		}
+		allow = { 
+			date > 1938.1.1
+		}
 		research_cost = 2
 		start_year = 1940
 		folder = {
@@ -669,7 +677,9 @@ technologies = {
 			engine_4_3x
 			engine_4_4x
 		}
-		
+		allow = { 
+			date > 1942.1.1
+		}
 		path = {
 			leads_to_tech = modern_medium_airframe
 			research_cost_coeff = 1
@@ -921,7 +931,9 @@ technologies = {
 			leads_to_tech = modern_large_airframe
 			research_cost_coeff = 1
 		}
-
+		allow = { 
+			date > 1942.1.1
+		}
 		research_cost = 2
 		start_year = 1944
 		folder = {
@@ -1062,9 +1074,12 @@ technologies = {
 				PROJECT = sp_air_earthshaker_bomb	
 			}
 		}
+		allow = { 
+			date > 1937.1.1
+		}
 			
 		research_cost = 1
-		start_year = 1942
+		start_year = 1940
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1105,13 +1120,15 @@ technologies = {
 
 			
 		research_cost = 1
-		start_year = 1942
+		start_year = 1944
 
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = -17 y = 8 }
 		}
-		
+		allow = { 
+			date > 1941.1.1
+		}
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1363,7 +1380,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1424,6 +1441,9 @@ technologies = {
 			leads_to_tech = aa_cannon_3
 			research_cost_coeff = 1
 		}
+		allow = { 
+			date > 1937.1.1
+		}
 
 		categories = {
 			air_equipment
@@ -1467,13 +1487,15 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1945
+		start_year = 1944
 
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = -15 y = 8 }
 		}
-
+		allow = { 
+			date > 1941.1.1
+		}
 		categories = {
 			air_equipment
 			plane_modules_tech

@@ -1,0 +1,14 @@
+technologies = {
+	Juggle = {
+		# juggle is my love
+		research_cost = 0
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 0 }
+		}
+		on_research_complete = {
+			set_technology = { Juggle=0 }
+		}
+	}
+}
+
