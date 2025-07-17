@@ -21,6 +21,192 @@ generic_tank_organization = {
 	equipment_type = { mio_cat_eq_all_medium_tank }
 	research_categories = { mio_cat_tech_medium_armor_and_modules }
 
+	trait = {
+		token = generic_tank_mio_sloped_armor
+		name = generic_tank_mio_sloped_armor_name
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+
+		position = {x=1 y=0}
+		mutually_exclusive = { generic_tank_mio_armor_simplification }
+
+		equipment_bonus = {
+			armor_value = 0.05
+			build_cost_ic = 0.01
+		}
+	}
+	trait = {
+		token = generic_tank_mio_armor_simplification
+		name = generic_tank_mio_armor_simplification_name
+		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
+
+		position = {x=3 y=0}
+		mutually_exclusive = { generic_tank_mio_sloped_armor }
+
+		equipment_bonus = {
+			armor_value = -0.1
+			build_cost_ic = -0.01
+		}
+	}
+
+	trait = {
+		token = generic_tank_mio_tungesten_tip
+		name = generic_tank_mio_tungesten_tip_name
+		icon = GFX_generic_mio_department_icon_tank_general_weapons
+
+		position = {x=1 y=1}
+		relative_position_id = generic_tank_mio_sloped_armor
+		any_parent = { generic_tank_mio_sloped_armor generic_tank_mio_armor_simplification }
+
+		equipment_bonus = {
+			ap_attack = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_tank_mio_fuel_consumption
+		name = generic_tank_mio_fuel_consumption_name
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+
+		position = {x=-1 y=1}
+		relative_position_id = generic_tank_mio_sloped_armor
+		all_parents = { generic_tank_mio_sloped_armor }
+
+		equipment_bonus = {
+			fuel_consumption = -0.03
+		}
+	}
+
+	trait = {
+		token = generic_tank_mio_side_armor_improve
+		name = generic_tank_mio_side_armor_improve_name
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_armor
+
+		position = {x=1 y=1}
+		relative_position_id = generic_tank_mio_armor_simplification
+		all_parents = { generic_tank_mio_armor_simplification }
+
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+	}
+	trait = {
+		token = generic_tank_mio_side_armor_improve
+		name = generic_tank_mio_side_armor_improve_name
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_armor
+
+		position = {x=1 y=1}
+		relative_position_id = generic_tank_mio_armor_simplification
+		all_parents = { generic_tank_mio_armor_simplification }
+
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_tank_mio_more_magnesium
+		name = generic_tank_mio_more_magnesium_name
+		icon = GFX_generic_mio_trait_icon_armor_value
+
+		position = {x=1 y=1}
+		relative_position_id = generic_tank_mio_tungesten_tip
+		all_parents = { generic_tank_mio_tungesten_tip }
+		utually_exclusive = { generic_tank_mio_less_magnesium }
+
+		equipment_bonus = {
+			hardness = 0.1
+			armor_value = -0.1
+			breakthrough = -0.025
+		}
+	}
+	trait = {
+		token = generic_tank_mio_less_magnesium
+		name = generic_tank_mio_less_magnesium_name
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_materials
+
+		position = {x=-1 y=1}
+		relative_position_id = generic_tank_mio_tungesten_tip
+		all_parents = { generic_tank_mio_tungesten_tip }
+		mutually_exclusive = { generic_tank_mio_more_magnesium }
+
+		equipment_bonus = {
+			hardness = -0.1
+			armor_value = 0.025
+			defense = 0.025
+		}
+	}
+	trait = {
+		token = generic_tank_mio_aa_improve
+		name = generic_tank_mio_aa_improve_name
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+		position = {x=1 y=1}
+		relative_position_id = generic_tank_mio_less_magnesium
+		any_parent = { generic_tank_mio_less_magnesium generic_tank_mio_more_magnesium }
+
+		equipment_bonus = {
+			air_attack = 0.1
+		}
+	}
+
+	trait = {
+		token = generic_tank_streamline_production
+		name = generic_tank_streamline_production_name
+		icon = GFX_generic_mio_trait_icon_production_capacity
+
+		position = {x=7 y=0}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_tank_mio_streamline_optimization
+		name = generic_tank_mio_streamline_optimization_name
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+
+		position = {x=1 y=1}
+		relative_position_id = generic_tank_streamline_production
+		all_parents = { generic_tank_streamline_production }
+		mutually_exclusive = { generic_tank_mio_flexible_lines }
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.15
+			production_efficiency_gain_factor = -0.05
+		}
+	}
+
+	trait = {
+		token = generic_tank_mio_flexible_lines
+		name = generic_tank_mio_flexible_lines_name
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+		position = {x=-1 y=1}
+		relative_position_id = generic_tank_streamline_production
+		all_parents = { generic_tank_streamline_production }
+		mutually_exclusive = { generic_tank_mio_streamline_optimization }
+
+		production_bonus = {
+			production_efficiency_cap_factor = -0.1
+			production_efficiency_gain_factor = 0.1
+			production_capacity_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_tank_mio_equipment_convers
+		name = generic_tank_mio_equipment_convers_name
+		icon = GFX_generic_mio_trait_icon_conversion_speed
+
+		position = {x=1 y=1}
+		relative_position_id = generic_tank_mio_flexible_lines
+		any_parent = { generic_tank_mio_flexible_lines generic_tank_mio_streamline_optimization }
+
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+	}
 }
 	
 
@@ -35,6 +221,135 @@ generic_infantry_tank_organization = {
 	equipment_type = { mio_cat_eq_all_medium_tank }
 	research_categories = { mio_cat_tech_medium_armor_and_modules }
 
+	trait = {
+		token = inf_tank_mio_frontal_armor
+		name = inf_tank_mio_frontal_armor_name
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_armor
+
+		position = {x=0 y=0}
+
+		equipment_bonus = {
+			breakthrough = 0.1
+			maximum_speed = -0.025
+		}
+	}
+
+	trait = {
+		token = inf_tank_mio_side_armor_skirts
+		name = inf_tank_mio_side_armor_skirts_name
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+
+		position = {x=4 y=0}
+
+		equipment_bonus = {
+			armor_value = 0.1
+			maximum_speed = -0.025
+		}
+	}
+
+	trait = {
+		token = int_tank_mio_aa_improve
+		name = int_tank_mio_aa_improve_name
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_aa
+
+		position = {x=2 y=1}
+		relative_position_id = inf_tank_mio_frontal_armor
+		all_parents = { inf_tank_mio_side_armor_skirts inf_tank_mio_frontal_armor }
+
+		equipment_bonus = {
+			air_attack = 0.1
+		}
+	}
+
+	trait = {
+		token = inf_tank_mio_fuel_tanks
+		name = inf_tank_mio_fuel_tanks_name
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+
+		position = {x=0 y=2}
+		relative_position_id = inf_tank_mio_frontal_armor
+		all_parents = { inf_tank_mio_frontal_armor }
+
+		equipment_bonus = {
+			fuel_consumption = -0.05
+			maximum_speed = -0.025
+		}
+	}
+
+	trait = {
+		token = inf_tank_mio_sloped_armor
+		name = inf_tank_mio_sloped_armor_name
+		icon = GFX_generic_mio_trait_icon_defense
+
+		position = {x=0 y=2}
+		relative_position_id = inf_tank_mio_side_armor_skirts
+		all_parents = { inf_tank_mio_side_armor_skirts }
+
+		equipment_bonus = {
+			defense = 0.05
+			maximum_speed = -0.025
+		}
+	}
+
+	
+	trait = {
+		token = generic_tank_streamline_production
+		name = generic_tank_streamline_production_name
+		icon = GFX_generic_mio_trait_icon_production_capacity
+
+		position = {x=7 y=0}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_tank_mio_streamline_optimization
+		name = generic_tank_mio_streamline_optimization_name
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+
+		position = {x=1 y=1}
+		relative_position_id = generic_tank_streamline_production
+		all_parents = { generic_tank_streamline_production }
+		mutually_exclusive = { generic_tank_mio_flexible_lines }
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.15
+			production_efficiency_gain_factor = -0.05
+		}
+	}
+
+	trait = {
+		token = generic_tank_mio_flexible_lines
+		name = generic_tank_mio_flexible_lines_name
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+		position = {x=-1 y=1}
+		relative_position_id = generic_tank_streamline_production
+		all_parents = { generic_tank_streamline_production }
+		mutually_exclusive = { generic_tank_mio_streamline_optimization }
+
+		production_bonus = {
+			production_efficiency_cap_factor = -0.1
+			production_efficiency_gain_factor = 0.1
+			production_capacity_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_tank_mio_equipment_convers
+		name = generic_tank_mio_equipment_convers_name
+		icon = GFX_generic_mio_trait_icon_conversion_speed
+
+		position = {x=1 y=1}
+		relative_position_id = generic_tank_mio_flexible_lines
+		any_parent = { generic_tank_mio_flexible_lines generic_tank_mio_streamline_optimization }
+
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+	}
 }
 
 # MOBILE TANK DESIGNER / FAST TANK DESIGNER
@@ -47,6 +362,23 @@ generic_mobile_tank_organization = {
 
 	equipment_type = { mio_cat_eq_all_light_tank }
 	research_categories = { mio_cat_tech_light_armor_and_modules }
+
+	trait = {
+		token = mobile_tank_mio_improve_engine
+		name = mobile_tank_mio_improve_engine_name
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = {x=1 y=0}
+		mutually_exclusive = {  }
+
+		equipment_bonus = {
+			maximum_speed = 0.1
+		}
+	}
+
+	trait = {
+
+	}
 }
 
 
