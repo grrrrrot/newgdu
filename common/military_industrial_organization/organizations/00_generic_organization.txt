@@ -114,8 +114,8 @@ generic_tank_organization = {
 		utually_exclusive = { generic_tank_mio_less_magnesium }
 
 		equipment_bonus = {
-			hardness = 0.1
-			armor_value = -0.1
+			reliability = -0.1
+			armor_value = 0.1
 			breakthrough = -0.025
 		}
 	}
@@ -130,9 +130,9 @@ generic_tank_organization = {
 		mutually_exclusive = { generic_tank_mio_more_magnesium }
 
 		equipment_bonus = {
-			hardness = -0.1
-			armor_value = 0.025
-			defense = 0.025
+			reliability = 0.1
+			armor_value = -0.1
+			maximum_speed = 0.05
 		}
 	}
 	trait = {
@@ -386,6 +386,10 @@ generic_mobile_tank_organization = {
 			breakthrough = 0.05
 		}
 	}
+
+	#trait = {
+	#	token = mobile_tank_mio_
+	#}
 }
 
 
@@ -405,7 +409,7 @@ generic_heavy_tank_organization = {
 		name = hev_tank_mio_truck_width_name
 		icon = GFX_generic_mio_department_icon_tank_general_quality
 
-		position = {x=3 y=0}
+		position = {x=2 y=0}
 
 		equipment_bonus = {
 			breakthrough = 0.05
@@ -441,6 +445,122 @@ generic_heavy_tank_organization = {
 
 		equipment_bonus = {
 			build_cost_ic = -0.01
+		}
+	}
+
+	trait = {
+		token = hev_tank_mio_engine_consuption
+		name = hev_tank_mio_engine_consuption_name
+		icon = GFX_generic_mio_trait_icon_reliability
+
+		position = {x=2 y=1}
+		relative_position_id = hev_tank_mio_truck_width
+		all_parents = { hev_tank_mio_truck_width }
+
+		equipment_bonus = {
+			fuel_consumption = -0.03
+		}
+	}
+
+	trait = {
+		token = hev_tank_mio_def_dozer
+		name = hev_tank_mio_def_dozer_name
+		icon = GFX_generic_mio_trait_icon_defense
+
+		position = {x=-2 y=1}
+		relative_position_id = hev_tank_mio_truck_width
+		all_parents = { hev_tank_mio_truck_width }
+
+		equipment_bonus = {
+			defense = 0.05
+		}
+	}
+
+	trait = {
+		token = hev_tank_mio_tungesten_tips
+		name = hev_tank_mio_tungesten_tips_name
+		icon = GFX_generic_mio_department_icon_tank_general_weapons
+
+		position = {x=1 y=1}
+		relative_position_id = hev_tank_mio_sloped_armor
+		any_parent = { hev_tank_mio_sloped_armor hev_tank_mio_angled_armor }
+
+		equipment_bonus = {
+			ap_attack = 0.1
+		}
+	}
+
+	trait = {
+		token = hev_tank_mio_engine_plus
+		name = hev_tank_mio_engine_plus_name
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = {x=0 y=1}
+		relative_position_id = hev_tank_mio_def_dozer
+		all_parents = { hev_tank_mio_def_dozer }
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+
+	trait = {
+		token = hev_tank_mio_fuel_tanks
+		name = hev_tank_mio_fuel_tanks_name
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+
+		position = {x=0 y=1}
+		relative_position_id = hev_tank_mio_engine_consuption
+		all_parents = { hev_tank_mio_engine_consuption }
+
+		equipment_bonus = {
+			fuel_capacity = 0.5
+		}
+	}
+
+	trait = {
+		token = hev_tank_mio_layering_armor
+		name = hev_tank_mio_layering_armor
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_production
+
+		position = {x=0 y=2}
+		relative_position_id = hev_tank_mio_angled_armor
+		all_parents = { hev_tank_mio_angled_armor }
+
+		equipment_bonus = {
+			armor_value = 0.05
+		}
+	}
+
+	trait = {
+		token = hev_tank_mio_armor_fatness
+		name = hev_tank_mio_armor_fatness_name
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+
+		position = {x=0 y=2}
+		relative_position_id = hev_tank_mio_sloped_armor
+		all_parents = { hev_tank_mio_sloped_armor }
+
+		equipment_bonus = {
+			armor_value = 0.15
+			breakthrough = 0.1
+			build_cost_ic = 0.04
+		}
+	}
+
+	trait = { # place holder
+		token = hev_tank_mio_special_countries_trait
+		name = sisikal_or_kalowar
+		#icon = 
+
+		special_trait_background = yes
+
+		position = {x=0 y=2}
+		relative_position_id = hev_tank_mio_tungesten_tips
+		any_parent = { hev_tank_mio_tungesten_tips hev_tank_mio_layering_armor hev_tank_mio_armor_fatness }
+
+		equipment_bonus = {
+			reliability = 0.01
 		}
 	}
 }
