@@ -337,7 +337,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = amphibious_tank_chassis_2
+			leads_to_tech = amphibious_tank_2
 			research_cost_coeff = 1
 		}
 
@@ -363,7 +363,7 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
-	amphibious_tank_chassis_2 = { #SchwimmPanzer II
+	amphibious_tank_2 = { #SchwimmPanzer II
 
 
 		enable_equipments {

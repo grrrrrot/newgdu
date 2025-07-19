@@ -3221,36 +3221,67 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 120
 			custom_effect_tooltip = generic_skip_one_line_tt
-			every_country = {
+			ENG = {
+				add_timed_idea = {
+					idea = ENG_imp_conf
+					days = 365
+				}
+			}
+			If = {
 				limit = {
-					OR = {
-						tag = ENG
-						AND = {
-							is_subject_of = ENG
-							tag = CAN
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = RAJ
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
+					country_exists = AST
+				}
+				AST = {
+					add_timed_idea = {
+						idea = ENG_imp_conf
+						days = 365
 					}
 				}
-				country_event = { id = mtg_britain.82 hours = 6 }
 			}
-			hidden_effect = { set_country_flag = ENG_imperial_conference_timer_flag }
-			custom_effect_tooltip = ENG_imperial_conference_tt
+			If = {
+				limit = {
+					country_exists = CAN
+				}
+				CAN = {
+					add_timed_idea = {
+						idea = ENG_imp_conf
+						days = 365
+					}
+				}
+			}
+			If = {
+				limit = {
+					country_exists = SAF
+				}
+				SAF = {
+					add_timed_idea = {
+						idea = ENG_imp_conf
+						days = 365
+					}
+				}
+			}
+			If = {
+				limit = {
+					country_exists = NZL
+				}
+				NZL = {
+					add_timed_idea = {
+						idea = ENG_imp_conf
+						days = 365
+					}
+				}
+			}
+			If = {
+				limit = {
+					country_exists = RAJ
+				}
+				RAJ = {
+					add_timed_idea = {
+						idea = ENG_imp_conf
+						days = 365
+					}
+				}
+			}
 		}
 	}
 	### DEMOCRATIC BRANCH - STEADY AS SHE GOES ###

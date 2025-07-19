@@ -522,7 +522,6 @@ spriteTypes = {
 		name = "GFX_tech_mountaineers_medium"
 		texturefile = "gfx/interface/technologies/mountain.dds"
 	}	
-
 	SpriteType = {
 		name = "GFX_marines3_medium"
 		texturefile = "gfx/interface/technologies/marines3.dds"
@@ -537,7 +536,48 @@ spriteTypes = {
 		name = "GFX_marines_medium"
 		texturefile = "gfx/interface/technologies/marines.dds"
 	}	
-
+	SpriteType = {
+		name = "GFX_jaegers3_medium"
+		texturefile = "gfx/interface/technologies/infantry/special_infantry/jaegers3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_jaegers2_medium"
+		texturefile = "gfx/interface/technologies/infantry/special_infantry/jaegers2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_jaegers_medium"
+		texturefile = "gfx/interface/technologies/infantry/special_infantry/jaegers.dds"
+	}	
+	SpriteType = {
+		name = "GFX_shocktroops3_medium"
+		texturefile = "gfx/interface/technologies/infantry/special_infantry/shocktroops3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_shocktroops2_medium"
+		texturefile = "gfx/interface/technologies/infantry/special_infantry/shocktroops2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_shocktroops_medium"
+		texturefile = "gfx/interface/technologies/infantry/special_infantry/shocktroops.dds"
+	}
+	SpriteType = {
+		name = "GFX_desertinfantry_at3_medium"
+		texturefile = "gfx/interface/technologies/infantry/special_infantry/desertinfantry3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_desertinfantry_at2_medium"
+		texturefile = "gfx/interface/technologies/infantry/special_infantry/desertinfantry2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_desertinfantry_at_medium"
+		texturefile = "gfx/interface/technologies/infantry/special_infantry/desertinfantry.dds"
+	}
 	SpriteType = {
 		name = "GFX_paratroopers3_medium"
 		texturefile = "gfx/interface/technologies/paratroopers3.dds"

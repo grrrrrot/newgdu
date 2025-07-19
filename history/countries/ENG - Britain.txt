@@ -163,10 +163,7 @@ add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF
 add_to_faction = RAJ
-add_to_faction = MAL
 add_to_faction = POL
-add_to_faction = USA
-add_to_faction = PHI
 
 # Order matters - here Chamberlain becomes starting leader
 recruit_character = ENG_oswald_mosley
