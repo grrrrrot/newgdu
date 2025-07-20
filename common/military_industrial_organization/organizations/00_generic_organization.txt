@@ -368,17 +368,17 @@ generic_mobile_tank_organization = {
 		name = mobile_tank_mio_improve_engine_name
 		icon = GFX_generic_mio_trait_icon_maximum_speed
 
-		position = {x=1 y=0}
+		position = {x=0 y=0}
 
 		equipment_bonus = {
-			maximum_speed = 0.1
+			maximum_speed = 0.05
 		}
 	}
 
 	trait = {
 		token = mobile_tank_mio_armor
 		name = mobile_tank_mio_armor_name
-		icon = GFX_
+		icon = GFX_generic_mio_department_icon_tank_light_tank_armor
 
 		position = {x=4 y=0}
 	
@@ -387,9 +387,65 @@ generic_mobile_tank_organization = {
 		}
 	}
 
-	#trait = {
-	#	token = mobile_tank_mio_
-	#}
+	trait = {
+		token = mobile_tank_mio_rubberized_trucks
+		name = mobile_tank_mio_rubberized_trucks_name
+		icon = GFX_generic_mio_department_icon_tank_light_tank_engine
+
+		position = {x=0 y=2}
+		relative_position_id = mobile_tank_mio_improve_engine
+		all_parents = { mobile_tank_mio_improve_engine }
+
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+
+	trait = {
+		token = mobile_tank_mio_gears_optimization
+		name = mobile_tank_mio_gears_optimization_name
+		icon = GFX_generic_mio_department_icon_tank_light_tank_technology
+	
+		position = {x=0 y=2}
+		relative_position_id = mobile_tank_mio_armor
+		all_parents = { mobile_tank_mio_armor }
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+
+	trait = {
+		token = mobile_tank_mio_def_dozer
+		name = mobile_tank_mio_def_dozer_name
+		icon = GFX_generic_mio_trait_icon_defense
+
+		position = {x=2 y=2}
+		relative_position_id = mobile_tank_mio_rubberized_trucks
+		any_parent = { mobile_tank_mio_rubberized_trucks mobile_tank_mio_gears_optimization }
+
+		equipment_bonus = {
+			defense = 0.1
+			reliability = -0.02
+			maximum_speed = -0.01
+		}
+	}
+
+	trait = {
+		token = mobile_tank_mio_ofs_attachments
+		name = mobile_tank_mio_ofs_attachments_name
+		icon = GFX_generic_mio_trait_icon_breakthrough
+
+		position = {x=0 y=2}
+		relative_position_id = mobile_tank_mio_gears_optimization
+		all_parents = { mobile_tank_mio_gears_optimization }
+
+		equipment_bonus = {
+			breakthrough = 0.1
+			reliability = -0.02
+			maximum_speed = -0.01
+		}
+	}
 }
 
 
