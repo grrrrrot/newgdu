@@ -218,7 +218,9 @@ technologies = {
 			leads_to_tech = advanced_light_tank_chassis
 			research_cost_coeff = 1
 		}
-
+		allow = { 
+			date > 1937.1.1
+		}
 
 		research_cost = 2
 		start_year = 1936
@@ -340,6 +342,9 @@ technologies = {
 			leads_to_tech = amphibious_tank_2
 			research_cost_coeff = 1
 		}
+		allow = { 
+			date > 1940.1.1
+		}
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -374,6 +379,9 @@ technologies = {
 			tank_radio_3
 			auto_loader
 			tank_medium_cannon_3
+		}
+		allow = { 
+			date > 1942.1.1
 		}
 
 
@@ -470,6 +478,9 @@ technologies = {
 			tank_high_velocity_cannon
 			tank_radio_1
 			squeezebore_adaptor
+		}
+		allow = { 
+			date > 1938.1.1
 		}
 
 		enable_subunits = {
@@ -625,7 +636,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = nsb_armour_folder
@@ -659,6 +670,10 @@ technologies = {
 			auto_loader
 			tank_medium_cannon_3
 		}
+		allow = { 
+			date > 1941.1.1
+		}
+
 
 		path = {
 			leads_to_tech = main_battle_tank_chassis
@@ -736,6 +751,9 @@ technologies = {
 			tank_heavy_cannon
 			squeezebore_adaptor
 		}
+		allow = { 
+			date > 1938.1.1
+		}
 
 		path = {
 			leads_to_tech = improved_heavy_tank_chassis
@@ -780,6 +798,9 @@ technologies = {
 		path = {
 			leads_to_tech = advanced_heavy_tank_chassis
 			research_cost_coeff = 1
+		}
+		allow = { 
+			date > 1939.1.1
 		}
 
 		path = {
@@ -872,6 +893,9 @@ technologies = {
 		path = {
 			leads_to_tech = main_battle_tank_chassis
 			research_cost_coeff = 1
+		}
+		allow = { 
+			date > 1941.1.1
 		}
 
 		research_cost = 2.5

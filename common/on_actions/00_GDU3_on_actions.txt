@@ -1,0 +1,10 @@
+on_actions = {
+	on_startup = {
+		SAF = {
+			give_resource_rights = { receiver = ENG state = 719 }
+		}
+		USA = {
+			give_resource_rights = { receiver = ENG state = 378 }
+		}
+	}
+}

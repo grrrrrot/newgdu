@@ -59,9 +59,6 @@ sub_units = {
 		}
 		mountain = {
 			movement = 0.1
-		}
-		gibraltar = {
-			movement = 0.05
 		}		
 		marsh = {
 			attack = 0.075
@@ -84,33 +81,6 @@ sub_units = {
 		jungle = {
 			movement = 0.1
 		}
-		
-		desert_africa = {
-			movement = 0.2
-		}
-
-		forest_africa = {
-			attack = 0.075
-			defence = 0.075
-			movement = 0.2
-		}
-		hills_africa = {
-			movement = 0.1
-		}
-		mountain_africa = {
-			movement = 0.1
-		}
-		marsh_africa = {
-			attack = 0.075
-			defence = 0.075
-			movement = 0.15
-		}
-		plains_africa = {
-			movement = 0.30
-		}
-		urban_africa = {
-			movement = 0.2
-		}	
 	}
 	
 	jungletroop = {
@@ -166,10 +136,7 @@ sub_units = {
 		}
 		mountain = {
 			movement = 0.1
-		}
-		gibraltar = {
-			movement = 0.05
-		}		
+		}	
 		marsh = {
 			movement = 0.05
 		}
@@ -187,34 +154,6 @@ sub_units = {
 			attack = 0.2
 		}
 		jungle = {
-			attack = 0.075
-			defence = 0.075
-			movement = 0.25
-		}
-		
-		desert_africa = {
-			movement = 0.2
-		}
-
-		forest_africa = {
-			movement = 0.10
-		}
-		hills_africa = {
-			movement = 0.1
-		}
-		mountain_africa = {
-			movement = 0.1
-		}
-		marsh_africa = {
-			movement = 0.05
-		}
-		plains_africa = {
-			movement = 0.30
-		}
-		urban_africa = {
-			movement = 0.2
-		}
-		jungle_africa = {
 			attack = 0.075
 			defence = 0.075
 			movement = 0.25
@@ -277,10 +216,7 @@ sub_units = {
 		}
 		mountain = {
 			movement = 0.1
-		}
-		gibraltar = {
-			movement = 0.05
-		}		
+		}	
 		marsh = {
 			movement = 0.05
 		}
@@ -302,32 +238,6 @@ sub_units = {
 		}
 		jungle = {
 			movement = 0.1
-		}
-		
-		desert_africa = {
-			movement = 0.2
-		}
-
-		forest_africa = {
-			movement = 0.10
-		}
-		hills_africa = {
-			movement = 0.1
-		}
-		mountain_africa = {
-			movement = 0.1
-		}
-		marsh_africa = {
-			movement = 0.05
-		}
-		plains_africa = {
-			movement = 0.30
-		}
-		urban_africa = {
-			attack = 0.15
-			movement = 0.3
-			defence = 0.10
-			#Please dont use these to guard coastal urban tiles or I will take this away
 		}
 		fort = {
 			attack = 0.15
@@ -390,10 +300,7 @@ sub_units = {
 		}
 		mountain = {
 			movement = 0.1
-		}
-		gibraltar = {
-			movement = 0.05
-		}		
+		}	
 		marsh = {
 			movement = 0.05
 		}
@@ -412,31 +319,6 @@ sub_units = {
 		}
 		jungle = {
 			movement = 0.1
-		}
-		
-		desert_africa = {
-			attack = 0.075
-			defence = 0.075
-			movement = 0.4
-		}
-
-		forest_africa = {
-			movement = 0.10
-		}
-		hills_africa = {
-			movement = 0.1
-		}
-		mountain_africa = {
-			movement = 0.1
-		}
-		marsh_africa = {
-			movement = 0.05
-		}
-		plains_africa = {
-			movement = 0.30
-		}
-		urban_africa = {
-			movement = 0.2
 		}
 	}
 }

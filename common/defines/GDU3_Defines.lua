@@ -3,21 +3,18 @@
 
 
 ------ Recently Added -----
-NDefines.NMilitary.FUEL_FLOW_PENALTY_FOR_SUPPLY_CHUNK_EDGE_RATIO = 0.25 --snaking 
-NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2                         -- vanilla 1, you can train to trained in deployment queue 
-NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 156.0                     -- vanilla 62.0  how fast you train in deployment queue
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 1				-- This many divisons are required for the country to be able to send volunteers.
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.1			-- Amount of tension generated for each sent division
-NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0                     -- this is done due to constantly retreating with carrier fleets essentially making all other ships useless, delete-revert if you see it is unnecesary, 
-NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 0                     -- vanilla is 4  , carriers immediatly start firing, capitals start after 4 hours
-NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 0 
---bellow added as of 8/20/2019  ,  with low chance help with rare desync, 2 are performance changes
+
+--Country
 NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0				-- Weight of the country score.
 NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0					-- Based on number of armies.
 NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0					-- Based on number of navies.
 NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (which is typically a lot).
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
+NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.00
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 9999
 
 ---------------------------	Resistance
 NDefines.NCountry.RESISTANCE_STRENGTH_FROM_VP = 0.0
@@ -239,6 +236,24 @@ NDefines.NMilitary.AIR_SUPPORT_BASE = 0.22
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.09   -- air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.09    -- global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.5 -- how many CAS/TAC can enter a combat depending on enemy width there
+NDefines.NMilitary.FUEL_FLOW_PENALTY_FOR_SUPPLY_CHUNK_EDGE_RATIO = 0.25 --snaking 
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2                         -- vanilla 1, you can train to trained in deployment queue 
+NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 156.0                     -- vanilla 62.0  how fast you train in deployment queue
+NDefines.NMilitary.ACCLIMATIZATION_IN_COMBAT_SPEED_FACTOR = 1		-- Acclimatization speed multiplier while being in combat.
+NDefines.NMilitary.ACCLIMATIZATION_SPEED_GAIN = 0.015				-- A variable used to balance the overall speed of gaining the acclimatization
+NDefines.NMilitary.ACCLIMATIZATION_LOSS_SPEED_FACTOR = 4.0		-- Loosing one acclimatization while being under affect of the opposite climate should cause it to drop down much faster than gaining.
+NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.00 -- Assigning traits is a PITA. Why should it cost anything?
+NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 500.0 -- CP is used for too many things in the mod for it to be spent on something like this without it being a nuisance.
+NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 200               -- default capacity if not specified 
+NDefines.NMilitary.DECRYPTION_ADVANTAGE_BONUS = 0.025 -- Reducing all combat modifiers across the board
+NDefines.NMilitary.BASE_FORT_PENALTY = -0.12 					   -- fort penalty 
+NDefines.NMilitary.UNIT_DIGIN_CAP = 2.0
+NDefines.NMilitary.PLANNING_MAX = 0.17                           	-- can get more from techs
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01	-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.0001				-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 0		-- time in days for a unit leader to regain its modifiers
+
+
 --Air
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0 
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR	= 0
@@ -315,3 +330,55 @@ NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.62						-- fuel cost multiplier for a
 NDefines.NAir.FUEL_COST_MULT = 0.34
 NDefines.NNavy.FUEL_COST_MULT = 0.05 -- fuel multiplier for all naval missions
 --/Fuel
+--Navy
+NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0                     -- this is done due to constantly retreating with carrier fleets essentially making all other ships useless, delete-revert if you see it is unnecesary, 
+NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 0                     -- vanilla is 4  , carriers immediatly start firing, capitals start after 4 hours
+NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 0 
+--Technology
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 45.0  -- increased from 45 to 55 8/3/2019
+NDefines.NTechnology.BASE_TECH_COST = 87
+NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0.00
+NDefines.NTechnology.MAX_TECH_SHARING_BONUS = 0.40  			-- Max technology sharing bonus that can be applied instantly
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 4.1
+--Supply
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.20
+NDefines.NSupply.CAPITAL_SUPPLY_BASE = 8.0
+NDefines.NSupply.CAPITAL_SUPPLY_CIVILIAN_FACTORIES = 0.9
+NDefines.NSupply.CAPITAL_SUPPLY_MILITARY_FACTORIES = 0.9
+NDefines.NSupply.CAPITAL_SUPPLY_DOCKYARDS = 0.8
+NDefines.NSupply.CAPITAL_INITIAL_SUPPLY_FLOW = 10.0
+NDefines.NSupply.CAPITAL_STARTING_PENALTY_PER_PROVINCE = 0.25
+NDefines.NSupply.CAPITAL_ADDED_PENALTY_PER_PROVINCE = 0.6
+NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 4.2
+NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 7.0
+NDefines.NSupply.NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.5
+NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 0.5
+NDefines.NSupply.NODE_FLOW_BONUS_PER_RAIL_LEVEL = 0.70
+NDefines.NSupply.FLOATING_HARBOR_INITIAL_SUPPLY_FLOW = 4.0
+NDefines.NSupply.FLOATING_HARBOR_STARTING_PENALTY_PER_PROVINCE = 0.5
+NDefines.NSupply.FLOATING_HARBOR_ADDED_PENALTY_PER_PROVINCE = 0.6
+NDefines.NSupply.FLOATING_HARBOR_BASE_SUPPLY = 20.0
+NDefines.NSupply.FLOATING_HARBOR_BASE_DURATION = 28
+NDefines.NSupply.FLOATING_HARBOR_MIN_DECAY = 0.1
+NDefines.NSupply.SUPPLY_FLOW_DROP_REDUCTION_AT_MAX_INFRA = 0.60
+NDefines.NSupply.SUPPLY_FLOW_PENALTY_CROSSING_RIVERS = 0.05
+NDefines.NSupply.SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_K = 1.0
+NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_BONUS = 3.0
+NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 50.0
+NDefines.NSupply.SUPPLY_HUB_MOTORIZATION_MARGINAL_EFFECT_DECAY = 1.0
+NDefines.NSupply.RAILWAY_BASE_FLOW = 8.0
+NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 7.0
+NDefines.NSupply.RAILWAY_MIN_FLOW = 5.0
+NDefines.NSupply.NAVAL_BASE_FLOW = 8.0
+NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 5.0
+NDefines.NSupply.INFRA_TO_SUPPLY = 0.6
+NDefines.NSupply.VP_TO_SUPPLY_BASE = 0.4
+NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.2
+NDefines.NSupply.SUPPLY_BASE_MULT = 0.4
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 2
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 1
+NDefines.NSupply.MIN_TRAIN_SUPPLY_FACTOR = 0.2
+NDefines.NSupply.DAYS_TO_START_GIVING_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL = 4
+NDefines.NSupply.SUPPLY_PATH_MAX_DISTANCE = 10
+NDefines.NSupply.ALERT_VERY_LOW_SUPPLY_LEVEL = 0.5
+NDefines.NSupply.ALERT_LOW_SUPPLY_LEVEL = 0.9
