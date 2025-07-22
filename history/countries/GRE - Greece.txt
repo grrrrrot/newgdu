@@ -22,6 +22,9 @@ set_popularities = {
 	communism = 17
 	neutrality = 38
 }
+add_ideas = {
+	gdu_neutrality
+}
 
 set_stability = 0.72
 set_war_support = 0.23

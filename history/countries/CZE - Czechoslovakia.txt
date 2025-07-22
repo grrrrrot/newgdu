@@ -21,3 +21,7 @@ set_popularities = {
 	fascism = 5
 	communism = 10
 }
+add_ideas = {
+	gdu_neutrality
+}
+

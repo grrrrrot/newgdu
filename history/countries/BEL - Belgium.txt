@@ -17,6 +17,9 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
+add_ideas = {
+	gdu_neutrality
+}
 
 set_popularities = {
 	democratic = 100

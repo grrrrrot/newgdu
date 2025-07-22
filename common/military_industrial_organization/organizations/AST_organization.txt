@@ -14,7 +14,6 @@ AST_new_south_wales_rc_organization = {
 	icon = GFX_idea_new_south_wales_rc
 	allowed = {
 		original_TAG = AST
-		has_dlc = "Together for Victory"
 	}
 }
 
@@ -34,10 +33,6 @@ AST_cockatoo_doe_organization = {
 	icon = GFX_idea_Cockatoo_doe
 	allowed = {
 		original_TAG = AST
-		has_dlc = "Together for Victory"
-	}
-	available = {
-		owner = { has_completed_focus = AST_cockatoo_island_shipyards}
 	}
 }
 AST_evans_deakin_co_organization = {
@@ -46,10 +41,6 @@ AST_evans_deakin_co_organization = {
 	icon = GFX_idea_evans_deakin_co
 	allowed = {
 		original_TAG = AST
-		has_dlc = "Together for Victory"
-	}
-	available = {
-		owner = { has_completed_focus = AST_kangaroo_point_shipyards}
 	}
 }
 
@@ -70,13 +61,6 @@ AST_com_aircraft_corporation_organization = {
 	icon = GFX_idea_com_aircraft_corporation
 	allowed = {
 		original_TAG = AST
-		has_dlc = "Together for Victory"
-	}
-	available = {
-		owner = {
-			has_completed_focus = AST_commonwealth_aircraft_corporation
-			is_subject_of = ENG 
-		}
 	}
 }
 
@@ -99,7 +83,6 @@ AST_lysaghts_works_organization = {
 	icon = GFX_idea_lysaghts_works
 	allowed = {
 		original_TAG = AST
-		has_dlc = "Together for Victory"
 	}
 }
 AST_lithgow_saf_organization = {
@@ -108,6 +91,5 @@ AST_lithgow_saf_organization = {
 	icon = GFX_idea_lithgow_saf
 	allowed = {
 		original_TAG = AST
-		has_dlc = "Together for Victory"
 	}
 }

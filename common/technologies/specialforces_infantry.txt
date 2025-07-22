@@ -1,0 +1,240 @@
+technologies = {
+	
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+	
+	jaegers = {
+
+		enable_subunits = {
+			jaeger
+		}
+
+		path = {
+			leads_to_tech = jaegers2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0.75
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 12 y = @1936 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	
+	jaegers2 = {
+
+		jaeger = {
+			defense = 0.05
+		}
+		path = {
+			leads_to_tech = jaegers3
+			research_cost_coeff = 1
+		}
+		
+
+		research_cost = 0.75
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 12 y = @1939 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+		ai_will_do = {
+			factor = 0.3
+		}
+	}
+	
+	jaegers3 = {
+
+		jaeger = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 0.75
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 12 y = @1943 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+	}	
+	
+	shocktroops = {
+
+		enable_subunits = {
+			shocktroop
+		}
+
+		path = {
+			leads_to_tech = shocktroops2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0.75
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = @1936 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shocktroops2 = {
+
+		shocktroop = {
+			defense = 0.05
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = shocktroops3
+			research_cost_coeff = 1
+		}
+		
+
+		research_cost = 0.75
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = @1939 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shocktroops3 = {
+
+		shocktroop = {
+			defense = 0.05
+			soft_attack = 0.05
+		}
+
+		research_cost = 0.75
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = @1943 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	desertinfantry_at = {
+
+		enable_subunits = {
+			desertinfantry
+		}
+
+		path = {
+			leads_to_tech = desertinfantry_at2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0.75
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = @1936 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	
+	desertinfantry_at2 = {
+
+		desertinfantry = {
+			defense = 0.05
+		}
+		path = {
+			leads_to_tech = desertinfantry_at3
+			research_cost_coeff = 1
+		}
+		
+
+		research_cost = 0.75
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = @1939 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+	}
+	
+	desertinfantry_at3 = {
+
+		desertinfantry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 0.75
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = @1943 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+	}
+	
+}

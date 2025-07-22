@@ -147,7 +147,12 @@ if = {
 	give_guarantee = TUR
 	give_guarantee = YUG
 }
-add_ideas = neutrality_idea
+add_ideas = {
+	neutrality_idea
+	airandnavy_idea
+	efi_start
+}
+
 
 #Kick off kings crazy life
 if = {
